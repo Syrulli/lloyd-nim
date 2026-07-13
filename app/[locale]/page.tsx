@@ -1,7 +1,7 @@
 import Hero from "@/components/Hero";
 import ExperienceAbout from "@/components/ExperienceAbout";
 import StackProjects from "@/components/StackProjects";
-import Testimonials from "@/components/Testimonials";
+import Testimonials from "@/components/TestimonialCarousel";
 import Footer from "@/components/Footer";
 
 export default function Home() {

@@ -1,8 +1,68 @@
 {
-    "Hero": {
-        "description": "A full stack developer building fast, reliable products at the edge of backend systems and interface design.",
-        "download": "Download",
-        "email": "Send Email",
-        "location": "Taguig, Philippines"
+  "Hero": {
+    "description": "A full stack developer building fast, reliable products at the edge of backend systems and interface design.",
+    "download": "Download",
+    "email": "Send Email",
+    "location": "Taguig, Philippines"
+  },
+  "Common": {
+    "viewAll": "VIEW ALL"
+  },
+  "SectionHeaders": {
+    "experience": "EXPERIENCE",
+    "about": "ABOUT ME",
+    "techStack": "TECH STACK",
+    "projects": "PROJECTS",
+    "testimonials": "TESTIMONIALS",
+    "more": "+ more"
+  },
+  "About": {
+    "text1": "I am a full-stack developer who builds scalable web applications with well-structured APIs and intuitive user interfaces. I collaborate with cross-functional teams to design, develop, and implement backend services, APIs, and frontend applications, ensuring quality through testing and continuous improvement. I also work as a freelancer at Lazy Developers, where I deliver customized web solutions for clients such as Manuel L. Quezon University and translate business requirements into reliable digital products. In my free time,",
+    "text2": "I enjoy learning deutsch and continuously developing my technical and communication skills."
+  },
+  "Experience": {
+    "0": {
+      "role": "Full Stack Developer"
+    },
+    "1": {
+      "role": "Freelance Developer"
+    },
+    "2": {
+      "role": "Freelance Developer"
     }
+  },
+  "Projects": {
+    "sub-description": "A collection of applications I've designed and developed."
+  },
+  "Testimonials": {
+    "0": {
+      "text": "english text",
+      "name": "english name",
+      "role": "english role"
+    },
+    "1": {
+      "text": "english text",
+      "name": "english name",
+      "role": "english role"
+    },
+    "2": {
+      "text": "english text",
+      "name": "english name",
+      "role": "english role"
+    },
+    "3": {
+      "text": "english text",
+      "name": "english name",
+      "role": "english role"
+    }
+  },
+  "NotFound": {
+    "title": "404",
+    "heading": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "Footer": {
+    "rights": "All rights reserved"
+  }
 }

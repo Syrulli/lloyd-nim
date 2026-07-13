@@ -1,17 +1,24 @@
 import {
     ChevronDown,
-    Check,
+    ChevronUp,
     MapPin,
     Download,
     Mail,
-    ArrowRight,
-} from "lucide-react";
+    ChevronRight,
+    GitHub,
+    LinkedIn,
+    Check,
+
+} from "@deemlol/next-icons"
 
 export {
     ChevronDown,
-    Check,
+    ChevronUp,
     MapPin,
     Download,
     Mail,
-    ArrowRight,
+    ChevronRight,
+    GitHub,
+    LinkedIn,
+    Check,
 }

@@ -4,5 +4,65 @@
         "download": "Herunterladen",
         "email": "E-Mail senden",
         "location": "Taguig, Philippinen"
+    },
+    "Common": {
+        "viewAll": "ALLE ANZEIGEN"
+    },
+    "SectionHeaders": {
+        "experience": "ERFAHRUNG",
+        "about": "ÜBER MICH",
+        "techStack": "TECH-STACK",
+        "projects": "PROJEKTE",
+        "testimonials": "ERFAHRUNGSBERICHTE",
+        "more": "+ mehr"
+    },
+    "About": {
+        "text1": "Ich bin Full-Stack-Entwickler und entwickle skalierbare Webanwendungen mit übersichtlichen APIs und intuitiver Benutzerführung. Ich arbeite mit funktionsübergreifenden Teams zusammen, um Backend-Dienste, APIs und Frontend-Anwendungen zu entwerfen, zu entwickeln und zu implementieren, wobei ich durch Tests und kontinuierliche Verbesserung die Qualität sicherstelle. Außerdem arbeite ich freiberuflich bei Lazy Developers, wo ich maßgeschneiderte Weblösungen für Kunden wie die Manuel L. Quezon University bereitstelle und geschäftliche Anforderungen in zuverlässige digitale Produkte umsetze",
+        "text2": "In meiner Freizeit lerne ich gerne Deutsch und baue meine technischen und kommunikativen Fähigkeiten kontinuierlich aus."
+    },
+    "Experience": {
+        "0": {
+            "role": "Full-Stack-Entwickler"
+        },
+        "1": {
+            "role": "Freiberuflicher Entwickler"
+        },
+        "2": {
+            "role": "Freiberuflicher Entwickler"
+        }
+    },
+    "Projects": {
+       "sub-description": "Eine Sammlung von Anwendungen, die ich entworfen und entwickelt habe."
+    },
+    "Testimonials": {
+        "0": {
+            "text": "german text",
+            "name": "german name.",
+            "role": "german role"
+        },
+        "1": {
+            "text": "german",
+            "name": "german name.",
+            "role": "german role"
+        },
+        "2": {
+            "text": "german",
+            "name": "german name.",
+            "role": "german role"
+        },
+        "3": {
+            "text": "german",
+            "name": "german name.",
+            "role": "german role"
+        }
+    },
+    "NotFound": {
+        "title": "404",
+        "heading": "Seite nicht gefunden",
+        "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+        "backHome": "Zurück zur Startseite"
+    },
+    "Footer": {
+        "rights": "Alle Rechte vorbehalten"
     }
 }
