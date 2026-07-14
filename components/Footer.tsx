@@ -12,7 +12,7 @@ export default async function Footer() {
 
       <div className="flex items-center gap-3">
         <a
-          href="https://github.com/yourusername"
+          href="https://github.com/Syrulli"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
@@ -20,9 +20,8 @@ export default async function Footer() {
         >
           <GitHub className="h-5 w-5" />
         </a>
-
         <a
-          href="https://linkedin.com/in/yourusername"
+          href="https://www.linkedin.com/in/lloydnim/"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"

@@ -1,17 +1,39 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
 
-type Slide = { text: string; name: string; role: string; avatar?: string };
+type Slide = {
+    text: string;
+    name: string;
+    role: string;
+    avatar?: string;
+};
 
-export default function TestimonialCarousel({ slides }: { slides: Slide[] }) {
-    const [emblaRef, emblaApi] = useEmblaCarousel({
-        loop: true,
-        align: "center",
-        containScroll: false,
-    });
+export default function TestimonialCarousel({
+    slides,
+}: {
+    slides: Slide[];
+}) {
+    const autoplay = useRef(
+        Autoplay({
+            delay: 4000, 
+            stopOnInteraction: false,
+            stopOnMouseEnter: true,
+        })
+    );
+
+    const [emblaRef, emblaApi] = useEmblaCarousel(
+        {
+            loop: true,
+            align: "center",
+            containScroll: false,
+        },
+        [autoplay.current]
+    );
+
     const [selectedIndex, setSelectedIndex] = useState(0);
 
     const onSelect = useCallback(() => {
@@ -21,9 +43,16 @@ export default function TestimonialCarousel({ slides }: { slides: Slide[] }) {
 
     useEffect(() => {
         if (!emblaApi) return;
+
         onSelect();
+
         emblaApi.on("select", onSelect);
         emblaApi.on("reInit", onSelect);
+
+        return () => {
+            emblaApi.off("select", onSelect);
+            emblaApi.off("reInit", onSelect);
+        };
     }, [emblaApi, onSelect]);
 
     return (
@@ -32,85 +61,70 @@ export default function TestimonialCarousel({ slides }: { slides: Slide[] }) {
                 <div className="flex">
                     {slides.map((s, i) => {
                         const isActive = i === selectedIndex;
+
                         return (
                             <div
                                 key={i}
-                                className="flex-[0_0_78%] sm:flex-[0_0_44%] lg:flex-[0_0_38%] min-w-0 px-3"
+                                className="flex-[0_0_95%] lg:flex-[0_0_65%] xl:flex-[0_0_75%] px-3"
                             >
-                                <blockquote
+                                <div
                                     onClick={() => !isActive && emblaApi?.scrollTo(i)}
                                     className={[
-                                        "relative flex flex-col justify-between rounded border border-line p-5 sm:p-6 transition-all duration-300 cursor-pointer grain",
+                                        "h-[215px] rounded border border-line bg-panel p-7 overflow-hidden",
+                                        "transition-all duration-300 cursor-pointer flex flex-col",
                                         isActive
-                                            ? "bg-base scale-100 opacity-100"
-                                            : "scale-90 opacity-40",
+                                            ? "opacity-100 scale-100"
+                                            : "opacity-40 scale-95",
                                     ].join(" ")}
                                 >
-                                    <span
-                                        aria-hidden
-                                        className={[
-                                            "absolute top-4 right-4 font-mono text-signal-dim/50 select-none leading-none",
-                                            isActive ? "text-5xl" : "text-3xl",
-                                        ].join(" ")}
-                                    >
-                                        "
-                                    </span>
-
-                                    <p
-                                        className={[
-                                            "relative text-paper leading-relaxed",
-                                            isActive ? "text-lg sm:text-xl" : "text-sm sm:text-base",
-                                        ].join(" ")}
-                                    >
-                                        {s.text}
-                                    </p>
-
-                                    <footer className="relative mt-4 flex items-center gap-3">
-                                        <div
-                                            className={[
-                                                "relative shrink-0 overflow-hidden rounded-full border border-line",
-                                                isActive ? "h-9 w-9" : "h-7 w-7",
-                                            ].join(" ")}
-                                        >
+                                    <div className="flex items-center gap-5">
+                                        <div className="relative h-10 w-10 overflow-hidden rounded-full border border-line bg-panel-2 shrink-0">
                                             {s.avatar ? (
                                                 <Image
                                                     src={s.avatar}
                                                     alt={s.name}
                                                     fill
-                                                    sizes="40px"
+                                                    sizes="50px"
                                                     className="object-cover"
                                                 />
                                             ) : (
-                                                <div className="flex h-full w-full items-center justify-center bg-signal-dim/20 font-mono text-[10px] text-muted">
+                                                <div className="flex h-full w-full items-center justify-center font-bold text-xl text-paper">
                                                     {s.name.charAt(0)}
                                                 </div>
                                             )}
                                         </div>
-                                        <div className="flex flex-col">
-                                            <span className="font-mono text-[13px] text-paper">
+
+                                        <div>
+                                            <h3 className="text-sm font-bold text-paper">
                                                 {s.name}
-                                            </span>
-                                            <span className="font-mono text-[10px] text-muted">
+                                            </h3>
+                                            <p className="mt-1 text-sm text-muted">
                                                 {s.role}
-                                            </span>
+                                            </p>
                                         </div>
-                                    </footer>
-                                </blockquote>
+                                    </div>
+                                    <div className="my-4 border-t border-line" />
+                                    <div className="flex-1 overflow-y-auto pr-2">
+                                        <p className="text-sm text-paper">{s.text}</p>
+                                    </div>
+                                </div>
                             </div>
                         );
                     })}
                 </div>
             </div>
 
-            <div className="mt-4 flex justify-center gap-1.5">
+            <div className="mt-6 flex justify-center gap-2">
                 {slides.map((_, i) => (
                     <button
                         key={i}
-                        aria-label={`Go to slide ${i + 1}`}
                         onClick={() => emblaApi?.scrollTo(i)}
+                        aria-label={`Go to slide ${i + 1}`}
                         className={[
-                            "h-1.5 rounded-full transition-all",
-                            i === selectedIndex ? "w-5 bg-signal" : "w-1.5 bg-signal-dim/30",
+                            "transition-all duration-300 rounded-full",
+                            i === selectedIndex
+                                ? "w-8 h-2 bg-signal"
+                                : "w-2 h-2 bg-signal-dim/30",
                         ].join(" ")}
                     />
                 ))}

@@ -1,6 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
-import { ArrowRight } from "@/components/icons/IconPacks";
+import { ChevronRight } from "@/components/icons/IconPacks";
 
 
 export default async function NotFound() {
@@ -26,7 +26,7 @@ export default async function NotFound() {
                         className="mt-6 inline-flex items-center gap-1.5 h-9 px-4 rounded border border-white/30 bg-panel-2/70 backdrop-blur font-mono text-xs hover:text-signal hover:border-signal transition-colors"
                     >
                         {t("backHome")}
-                        <ArrowRight className="h-3.5 w-3.5" />
+                        <ChevronRight className="h-3.5 w-3.5" />
                     </Link>
                 </div>
             </div>

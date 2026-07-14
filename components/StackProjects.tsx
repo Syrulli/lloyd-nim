@@ -18,7 +18,7 @@ export default async function StackProjects() {
         <div className="relative w-full aspect-[21/9] mt-4 -mb-8 overflow-hidden">
           <Image
             src="/projects/dummy_img_1.webp"
-            alt={t("title")}
+            alt="Project Image"
             fill
             className="object-cover object-top"
             priority

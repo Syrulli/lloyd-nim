@@ -35,25 +35,46 @@
     "sub-description": "A collection of applications I've designed and developed."
   },
   "Testimonials": {
+    "sub-description": "Building efficient, user-focused web applications as a Full-stack Developer.",
     "0": {
-      "text": "english text",
-      "name": "english name",
-      "role": "english role"
+      "text": "Lloyd is an impressive junior developer whose creativity and problem-solving abilities continuously surprise me. His dedication to producing high-quality work and his knack for tackling complex challenges make him a standout in any project. I’m confident he’ll excel in any development role he pursues.",
+      "name": "Hans Kristensen Esguerra",
+      "role": "Technical Project Manager at Concentrix Philippines"
     },
     "1": {
-      "text": "english text",
-      "name": "english name",
-      "role": "english role"
+      "text": "Lloyd combines a strong technical foundation with an eagerness to learn and explore new tools and methodologies. He also demonstrated a natural ability to collaborate, contributing significantly to team efforts.",
+      "name": "Justin Louise Neypes",
+      "role": "Professor at AMA University."
     },
     "2": {
-      "text": "english text",
-      "name": "english name",
-      "role": "english role"
+      "text": "He is not only a brilliant programmer but also a dependable teammate. In every competition, he brings sharp logic, calm focus, and a positive attitude that lifts the whole team. Working with him has been both inspiring and fun.",
+      "name": "Myro Mera",
+      "role": "Junior Programmer at TemaroTech"
     },
     "3": {
-      "text": "english text",
-      "name": "english name",
-      "role": "english role"
+      "text": "Lloyd has been an invaluable asset on multiple successful projects. He brings strong technical skills, a proactive approach to problem-solving, and a dedication that drives results. I highly recommend his work and know he will excel in any future role.",
+      "name": "King Dranreb Languido",
+      "role": "Technical Project Manager at Ascendion"
+    },
+    "4": {
+      "text": "Although I have limited knowledge in IT, having Lloyd as my intern has significantly eased my clerical tasks. Whenever I need assistance, he is always there to help me. Moreover, I am grateful for his friendship, especially since I am new to AMA University.",
+      "name": "Ella Mariz Punzalan",
+      "role": "Library Technician at AMA University"
+    },
+    "5": {
+      "text": "He is an excellent full stack developer combines strong foundational skills with a growth mindset, quickly adapting to new technologies, writing clean and efficient code, and actively contributing to team success through collaboration and continuous learning.",
+      "name": "Andrew Robin",
+      "role": "Computer Programmer at LGU SJDM Bulacan"
+    },
+    "6": {
+      "text": "Lloyd is a dedicated developer who consistently delivers quality work on time. He shows great attention to detail and always ensures his code is clean and efficient. His works well with the team and contributes valuable ideas to improve projects.",
+      "name": "Steven John Alcera",
+      "role": "Senior QA Tester at Fortune Pay Fintech"
+    },
+    "7": {
+      "text": "A skilled and reliable full stack developer. He writes clean, efficient code, communicates well with teammates, and consistently delivers quality work on both frontend and backend tasks. His problem-solving skills and proactive approach make him a valuable asset to any project.",
+      "name": "Glen Raven Dayawon",
+      "role": "Backend Developer at Fortune Pay Fintech"
     }
   },
   "NotFound": {
