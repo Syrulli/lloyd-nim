@@ -14,6 +14,7 @@
     "techStack": "TECH STACK",
     "projects": "PROJECTS",
     "testimonials": "TESTIMONIALS",
+    "certificates": "MY CERTIFICATES",
     "more": "+ more"
   },
   "About": {
@@ -29,8 +30,21 @@
     },
     "2": {
       "role": "Freelance Developer"
+    },
+    "3": {
+      "role": "Freelance Developer"
+    },
+    "4": {
+      "role": "Freelance Developer"
+    },
+    "5": {
+      "role": "Freelance Developer"
+    },
+    "6": {
+      "role": "Freelance Developer"
     }
   },
+
   "Projects": {
     "sub-description": "A collection of applications I've designed and developed."
   },

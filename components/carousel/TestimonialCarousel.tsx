@@ -19,7 +19,7 @@ export default function TestimonialCarousel({
 }) {
     const autoplay = useRef(
         Autoplay({
-            delay: 4000, 
+            delay: 4000,
             stopOnInteraction: false,
             stopOnMouseEnter: true,
         })
@@ -65,20 +65,20 @@ export default function TestimonialCarousel({
                         return (
                             <div
                                 key={i}
-                                className="flex-[0_0_95%] lg:flex-[0_0_65%] xl:flex-[0_0_75%] px-3"
+                                className="flex-[0_0_88%] sm:flex-[0_0_85%] lg:flex-[0_0_65%] xl:flex-[0_0_75%] px-2 sm:px-3"
                             >
                                 <div
                                     onClick={() => !isActive && emblaApi?.scrollTo(i)}
                                     className={[
-                                        "h-[215px] rounded border border-line bg-panel p-7 overflow-hidden",
+                                        "h-[265px] sm:h-[220px] rounded border border-line bg-panel p-4 sm:p-7 overflow-hidden grain",
                                         "transition-all duration-300 cursor-pointer flex flex-col",
                                         isActive
                                             ? "opacity-100 scale-100"
                                             : "opacity-40 scale-95",
                                     ].join(" ")}
                                 >
-                                    <div className="flex items-center gap-5">
-                                        <div className="relative h-10 w-10 overflow-hidden rounded-full border border-line bg-panel-2 shrink-0">
+                                    <div className="flex items-center gap-3 sm:gap-5">
+                                        <div className="relative h-8 w-8 sm:h-10 sm:w-10 overflow-hidden rounded-full border border-line bg-panel-2 shrink-0">
                                             {s.avatar ? (
                                                 <Image
                                                     src={s.avatar}
@@ -88,24 +88,26 @@ export default function TestimonialCarousel({
                                                     className="object-cover"
                                                 />
                                             ) : (
-                                                <div className="flex h-full w-full items-center justify-center font-bold text-xl text-paper">
+                                                <div className="flex h-full w-full items-center justify-center font-bold text-base sm:text-xl text-paper">
                                                     {s.name.charAt(0)}
                                                 </div>
                                             )}
                                         </div>
 
                                         <div>
-                                            <h3 className="text-sm font-bold text-paper">
+                                            <h3 className="text-xs sm:text-sm font-bold text-paper">
                                                 {s.name}
                                             </h3>
-                                            <p className="mt-1 text-sm text-muted">
+                                            <p className="mt-1 text-xs sm:text-sm text-muted">
                                                 {s.role}
                                             </p>
                                         </div>
                                     </div>
-                                    <div className="my-4 border-t border-line" />
+                                    <div className="my-3 sm:my-4 border-t border-line" />
                                     <div className="flex-1 overflow-y-auto pr-2">
-                                        <p className="text-sm text-paper">{s.text}</p>
+                                        <p className="text-xs sm:text-sm text-paper leading-relaxed">
+                                            {s.text}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -114,7 +116,7 @@ export default function TestimonialCarousel({
                 </div>
             </div>
 
-            <div className="mt-6 flex justify-center gap-2">
+            <div className="mt-4 sm:mt-6 flex justify-center gap-1.5 sm:gap-2">
                 {slides.map((_, i) => (
                     <button
                         key={i}
@@ -123,8 +125,8 @@ export default function TestimonialCarousel({
                         className={[
                             "transition-all duration-300 rounded-full",
                             i === selectedIndex
-                                ? "w-8 h-2 bg-signal"
-                                : "w-2 h-2 bg-signal-dim/30",
+                                ? "w-6 sm:w-8 h-1.5 sm:h-2 bg-signal"
+                                : "w-1.5 sm:w-2 h-1.5 sm:h-2 bg-signal-dim/30",
                         ].join(" ")}
                     />
                 ))}
