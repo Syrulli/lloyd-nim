@@ -8,9 +8,9 @@ export default async function Testimonials() {
   const tHeaders = await getTranslations("SectionHeaders");
 
   return (
-    <section className="rounded bg-panel border border-line p-6 sm:p-8 grain">
+    <section className="rounded bg-panel-2 border border-line p-6 sm:p-8 grain">
       <SectionHeader title={tHeaders("testimonials")} href="/testimonials" />
-      <p className="text-sm text-muted leading-relaxed my-2">
+      <p className="text-sm text-paper leading-relaxed my-2">
         {t("sub-description")}
       </p>
       <div className="mt-5">

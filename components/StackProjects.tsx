@@ -10,9 +10,9 @@ export default async function StackProjects() {
 
   return (
     <div className="grid grid-cols-1 sm:grid-cols-[4fr_1.7fr] gap-4">
-      <div className="rounded bg-panel border border-line p-8 pb-0 flex flex-col overflow-hidden">
+      <div className="grain rounded bg-panel-2 border border-line p-8 pb-0 flex flex-col overflow-hidden">
         <SectionHeader title={tHeaders("projects")} href="/projects" />
-        <p className="mt-1 max-w-xl text-sm text-muted leading-relaxed">
+        <p className="mt-1 max-w-xl text-sm text-paper leading-relaxed">
           {t("sub-description")}
         </p>
         <div className="relative w-full aspect-[21/9] mt-4 -mb-8 overflow-hidden">
@@ -27,7 +27,7 @@ export default async function StackProjects() {
         </div>
       </div>
 
-      <div className="rounded bg-panel border border-line p-6">
+      <div className="grain rounded bg-panel-2 border border-line p-6">
         <SectionHeader title={tHeaders("techStack")} href="/tech-stack" />
         <div className="mt-4 flex flex-wrap gap-3">
           {Techstack.map((s) => (

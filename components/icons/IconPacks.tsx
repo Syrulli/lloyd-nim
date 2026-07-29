@@ -8,7 +8,8 @@ import {
     GitHub,
     LinkedIn,
     Check,
-
+    Phone,
+    Code,
 } from "@deemlol/next-icons"
 
 export {
@@ -21,4 +22,6 @@ export {
     GitHub,
     LinkedIn,
     Check,
+    Phone,
+    Code,
 }

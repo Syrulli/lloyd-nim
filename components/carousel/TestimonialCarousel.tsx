@@ -78,6 +78,20 @@ export default function TestimonialCarousel({
                                     ].join(" ")}
                                 >
                                     <div className="flex items-center gap-3 sm:gap-5">
+                                        <div className="pointer-events-none absolute inset-0 overflow-hidden">
+                                            <div
+                                                className="absolute right-0 top-0 h-56 w-56 opacity-60"
+                                                style={{
+                                                    backgroundImage:
+                                                        "radial-gradient(rgba(255,255,255,0.5) 1.8px, transparent 1.8px)",
+                                                    backgroundSize: "10px 10px",
+                                                    maskImage:
+                                                        "radial-gradient(circle at top right, black 10%, transparent 55%)",
+                                                    WebkitMaskImage:
+                                                        "radial-gradient(circle at top right, black 20%, transparent 35%)",
+                                                }}
+                                            />
+                                        </div>
                                         <div className="relative h-8 w-8 sm:h-10 sm:w-10 overflow-hidden rounded-full border border-line bg-panel-2 shrink-0">
                                             {s.avatar ? (
                                                 <Image

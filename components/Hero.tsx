@@ -111,11 +111,11 @@ export default function Hero() {
         <div className="mt-8 flex flex-col md:flex-row md:items-start md:justify-between gap-6">
           <div>
             <h1 className="font-display font-bold text-3xl leading-tight">Lloyd Nim</h1>
-            <p className="mt-2 text-sm text-muted">
+            <p className="mt-2 text-sm text-paper">
               <MapPin className="h-4 w-4 inline-block mr-1" />
               {t("location")}
             </p>
-            <p className="mt-2 max-w-md text-sm text-muted">{t("description")}</p>
+            <p className="mt-2 max-w-md text-sm text-paper">{t("description")}</p>
           </div>
 
           <div className="flex items-center gap-2 md:mt-1 shrink-0">

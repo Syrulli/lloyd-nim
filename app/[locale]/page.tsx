@@ -3,6 +3,7 @@ import ExperienceAbout from "@/components/ExperienceAbout";
 import StackProjects from "@/components/StackProjects";
 import Testimonials from "@/components/TestimonialCarousel";
 import Footer from "@/components/Footer";
+import Contact from "@/components/Contact";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <ExperienceAbout />
         <StackProjects />
         <Testimonials />
+        <Contact />
         <Footer />
       </div>
     </main>

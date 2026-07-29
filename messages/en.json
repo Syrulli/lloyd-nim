@@ -9,47 +9,24 @@
     "viewAll": "VIEW ALL"
   },
   "SectionHeaders": {
-    "experience": "EXPERIENCE",
+    "experience": "MY EXPERIENCE",
     "about": "ABOUT ME",
     "techStack": "TECH STACK",
     "projects": "PROJECTS",
     "testimonials": "TESTIMONIALS",
     "certificates": "MY CERTIFICATES",
+    "contact": "CONTACT",
     "more": "+ more"
   },
   "About": {
     "text1": "I am a full-stack developer who builds scalable web applications with well-structured APIs and intuitive user interfaces. I collaborate with cross-functional teams to design, develop, and implement backend services, APIs, and frontend applications, ensuring quality through testing and continuous improvement. I also work as a freelancer at Lazy Developers, where I deliver customized web solutions for clients such as Manuel L. Quezon University and translate business requirements into reliable digital products. In my free time,",
     "text2": "I enjoy learning deutsch and continuously developing my technical and communication skills."
   },
-  "Experience": {
-    "0": {
-      "role": "Full Stack Developer"
-    },
-    "1": {
-      "role": "Freelance Developer"
-    },
-    "2": {
-      "role": "Freelance Developer"
-    },
-    "3": {
-      "role": "Freelance Developer"
-    },
-    "4": {
-      "role": "Freelance Developer"
-    },
-    "5": {
-      "role": "Freelance Developer"
-    },
-    "6": {
-      "role": "Freelance Developer"
-    }
-  },
-
   "Projects": {
     "sub-description": "A collection of applications I've designed and developed."
   },
   "Testimonials": {
-    "sub-description": "Building efficient, user-focused web applications as a Full-stack Developer.",
+    "sub-description": "As a full-stack developer, create efficient, user-centric web applications.",
     "0": {
       "text": "Lloyd is an impressive junior developer whose creativity and problem-solving abilities continuously surprise me. His dedication to producing high-quality work and his knack for tackling complex challenges make him a standout in any project. I’m confident he’ll excel in any development role he pursues.",
       "name": "Hans Kristensen Esguerra",
@@ -90,6 +67,9 @@
       "name": "Glen Raven Dayawon",
       "role": "Backend Developer at Fortune Pay Fintech"
     }
+  },
+  "Contact": {
+    "sub-description": "Tell me about your product or project, and I'll recommend the best solution and next steps. Most collaborations begin with a brief introductory call."
   },
   "NotFound": {
     "title": "404",

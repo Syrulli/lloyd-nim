@@ -5,8 +5,8 @@ export default async function Footer() {
   const t = await getTranslations("Footer");
 
   return (
-    <footer className="rounded bg-panel-2 border border-line px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p className="font-mono text-[12px] text-muted">
+    <footer className="rounded bg-panel-2 border border-line grain px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
+      <p className="font-mono text-[12px] text-paper">
         © {new Date().getFullYear()} Lloyd Nim — {t("rights")}
       </p>
 
@@ -16,7 +16,7 @@ export default async function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="GitHub"
-          className="text-muted hover:text-paper transition-colors"
+          className="text-muted hover:text-signal transition-colors"
         >
           <GitHub className="h-5 w-5" />
         </a>
@@ -25,7 +25,7 @@ export default async function Footer() {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="LinkedIn"
-          className="text-muted hover:text-paper transition-colors"
+          className="text-muted hover:text-signal transition-colors"
         >
           <LinkedIn className="h-5 w-5" />
         </a>
