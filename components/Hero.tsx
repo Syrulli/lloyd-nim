@@ -4,11 +4,7 @@ import { useRouter, usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
 import PixelBlast from "@/components/background/PixelBlast";
 import { ChevronDown, Check, MapPin, Download, Mail } from "@/components/icons/IconPacks";
-
-const LANGUAGES = [
-  { code: "en", label: "English" },
-  { code: "de", label: "Deutsch" },
-];
+import { LANGUAGES } from "@/constant/interfaceConst";
 
 function LanguageDropdown() {
   const [open, setOpen] = useState(false);
@@ -63,7 +59,7 @@ function LanguageDropdown() {
 
 export default function Hero() {
   const t = useTranslations("Hero");
-
+  
   return (
     <section className="relative rounded overflow-hidden bg-panel-2 border border-line grain">
       <div className="flex items-center gap-2 px-5 py-3 border-b border-line">
@@ -82,7 +78,6 @@ export default function Hero() {
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-70"
         /> */}
-
         <PixelBlast
           className="absolute inset-0 rounded-2xl"
           variant="square"

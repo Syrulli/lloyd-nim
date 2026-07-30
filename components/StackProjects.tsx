@@ -22,7 +22,6 @@ export default async function StackProjects() {
             fill
             className="object-cover object-top"
             priority
-          // sizes="(min-width: 640px) 60vw, 100vw"
           />
         </div>
       </div>

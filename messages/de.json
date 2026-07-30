@@ -15,7 +15,8 @@
         "projects": "PROJEKTE",
         "testimonials": "ERFAHRUNGSBERICHTE",
         "certificates": "MEIN ZERTIFIKAT",
-        "contact": "KONTAKT",
+        "contact": "LETZT UNS IN KONTAKT TRETTEN",
+        "available_for_work": "VERFÜGBAR FÜR ARBEIT",
         "more": "+ mehr"
     },
     "About": {
@@ -39,48 +40,51 @@
     "Testimonials": {
         "sub-description": "Entwickeln Sie als Full-Stack-Entwickler effiziente, nutzerorientierte Webanwendungen.",
         "0": {
-            "text": "Lloyd is an impressive junior developer whose creativity and problem-solving abilities continuously surprise me. His dedication to producing high-quality work and his knack for tackling complex challenges make him a standout in any project. I’m confident he’ll excel in any development role he pursues.",
+            "text": "Lloyd ist ein beeindruckender Junior-Entwickler, dessen Kreativität und Problemlösungsfähigkeiten mich immer wieder überraschen. Sein Engagement für qualitativ hochwertige Arbeit und sein Talent, komplexe Herausforderungen zu meistern, machen ihn zu einem herausragenden Mitglied jedes Projekts. Ich bin zuversichtlich, dass er in jeder Entwicklungsrolle, die er anstrebt, erfolgreich sein wird.",
             "name": "Hans Kristensen Esguerra",
             "role": "Technical Project Manager at Concentrix Philippines"
         },
         "1": {
-            "text": "Lloyd combines a strong technical foundation with an eagerness to learn and explore new tools and methodologies. He also demonstrated a natural ability to collaborate, contributing significantly to team efforts.",
+            "text": "Lloyd kombiniert eine starke technische Grundlage mit der Bereitschaft, neue Werkzeuge und Methoden zu erlernen und zu erkunden. Er hat auch eine natürliche Fähigkeit zur Zusammenarbeit gezeigt und leistet einen bedeutenden Beitrag zu den Teamleistungen.",
             "name": "Justin Louise Neypes",
             "role": "Professor at AMA University."
         },
         "2": {
-            "text": "He is not only a brilliant programmer but also a dependable teammate. In every competition, he brings sharp logic, calm focus, and a positive attitude that lifts the whole team. Working with him has been both inspiring and fun.",
+            "text": "Er ist nicht nur ein brillanter Programmierer, sondern auch ein zuverlässiger Teamkollege. In jeder Konkurrenz bringt er scharfe Logik, ruhige Konzentration und eine positive Einstellung mit, die das gesamte Team hebt. Mit ihm zusammenzuarbeiten hat sowohl inspirierend als auch spaßig geheißen.",
             "name": "Myro Mera",
             "role": "Junior Programmer at TemaroTech"
         },
         "3": {
-            "text": "Lloyd has been an invaluable asset on multiple successful projects. He brings strong technical skills, a proactive approach to problem-solving, and a dedication that drives results. I highly recommend his work and know he will excel in any future role.",
+            "text": "Lloyd war bei mehreren erfolgreichen Projekten ein unschätzbarer Gewinn. Er bringt starke technische Fähigkeiten, einen proaktiven Ansatz zur Problemlösung und ein Engagement mit, das Ergebnisse liefert. Ich empfehle seine Arbeit sehr und weiß, dass er in jeder zukünftigen Rolle erfolgreich sein wird.",
             "name": "King Dranreb Languido",
             "role": "Technical Project Manager at Ascendion"
         },
         "4": {
-            "text": "Although I have limited knowledge in IT, having Lloyd as my intern has significantly eased my clerical tasks. Whenever I need assistance, he is always there to help me. Moreover, I am grateful for his friendship, especially since I am new to AMA University.",
+            "text": "Obwohl ich nur begrenzte Kenntnisse in der IT habe, hat mir Lloyd als Praktikant meine Büroarbeiten erheblich erleichtert. Wann immer ich Hilfe benötige, ist er immer da, um mir zu helfen. Außerdem bin ich dankbar für seine Freundschaft, besonders da ich neu an der AMA University bin.",
             "name": "Ella Mariz Punzalan",
             "role": "Library Technician at AMA University"
         },
         "5": {
-            "text": "He is an excellent full stack developer combines strong foundational skills with a growth mindset, quickly adapting to new technologies, writing clean and efficient code, and actively contributing to team success through collaboration and continuous learning.",
+            "text": "Er ist ein hervorragender Full-Stack-Entwickler, der starke Grundlagen mit einem Wachstumsmindset kombiniert, sich schnell an neue Technologien anpasst, sauberen und effizienten Code schreibt und aktiv zum Teamerfolg durch Zusammenarbeit und kontinuierliches Lernen beiträgt.",
             "name": "Andrew Robin",
             "role": "Computer Programmer at LGU SJDM Bulacan"
         },
         "6": {
-            "text": "Lloyd is a dedicated developer who consistently delivers quality work on time. He shows great attention to detail and always ensures his code is clean and efficient. His works well with the team and contributes valuable ideas to improve projects.",
+            "text": "Lloyd ist ein engagierter Entwickler, der konsistent qualitativ hochwertige Arbeit liefert. Er zeigt großes Augenmerk auf die Details und stellt immer sicher, dass sein Code sauber und effizient ist. Er arbeitet gut mit dem Team zusammen und trägt wertvolle Ideen zur Verbesserung von Projekten bei.",
             "name": "Steven John Alcera",
             "role": "Senior QA Tester at Fortune Pay Fintech"
         },
         "7": {
-            "text": "A skilled and reliable full stack developer. He writes clean, efficient code, communicates well with teammates, and consistently delivers quality work on both frontend and backend tasks. His problem-solving skills and proactive approach make him a valuable asset to any project.",
+            "text": "Ein erfahrener und zuverlässiger Full-Stack-Entwickler. Er schreibt sauberen, effizienten Code, kommuniziert gut mit seinen Teamkollegen und liefert konsistent qualitativ hochwertige Arbeit bei sowohl frontend- als auch backend-bezogenen Aufgaben. Seine Problemlösungsfähigkeiten und proaktiver Ansatz machen ihn zu einem wertvollen Asset für jedes Projekt.",
             "name": "Glen Raven Dayawon",
             "role": "Backend Developer at Fortune Pay Fintech"
         }
     },
     "Contact": {
-        "sub-description": "Erzählen Sie mir von Ihrem Produkt oder Projekt, und ich werde die beste Lösung und die nächsten Schritte empfehlen. Die meisten Kooperationen beginnen mit einem kurzen Einführungsgespräch."
+        "sub-description": "Erzählen Sie mir von Ihrem Produkt oder Projekt, und ich werde die beste Lösung und die nächsten Schritte empfehlen. Die meisten Kooperationen beginnen mit einem kurzen Einführungsgespräch.",
+        "schedule_call": "Termin vereinbaren",
+        "email": "E-Mail senden",
+        "ld_subdescription": "Ein kleines team, das funktionale Web-Apps und Tools für den realen Einsatz erstellt."
     },
     "NotFound": {
         "title": "404",

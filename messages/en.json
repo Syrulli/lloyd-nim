@@ -15,7 +15,8 @@
     "projects": "PROJECTS",
     "testimonials": "TESTIMONIALS",
     "certificates": "MY CERTIFICATES",
-    "contact": "CONTACT",
+    "contact": "LET'S GET IN TOUCH",
+    "available_for_work": "AVAILABLE FOR WORK",
     "more": "+ more"
   },
   "About": {
@@ -69,7 +70,10 @@
     }
   },
   "Contact": {
-    "sub-description": "Tell me about your product or project, and I'll recommend the best solution and next steps. Most collaborations begin with a brief introductory call."
+    "sub-description": "Tell me about your product or project, and I'll recommend the best solution and next steps. Most collaborations begin with a brief introductory call.",
+    "schedule_call": "Schedule a Call",
+    "email": "Send Email",
+    "ld_subdescription": "A small team creating functional web apps and tools for real-world use."
   },
   "NotFound": {
     "title": "404",
