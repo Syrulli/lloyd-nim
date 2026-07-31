@@ -30,11 +30,11 @@ export default async function StackProjects() {
         <SectionHeader title={tHeaders("techStack")} href="/tech-stack" />
         <div className="mt-4 flex flex-wrap gap-3">
           {Techstack.map((s) => (
-            <span key={s} className="font-mono text-[11px] border border-white/30 rounded px-3 py-1 hover:text-signal hover:border-signal-dim transition-colors">
+            <span key={s} className=" text-[11px] border border-white/30 rounded px-3 py-1 hover:text-signal hover:border-signal-dim transition-colors">
               {s}
             </span>
           ))}
-          <Link href="/tech-stack" className="font-mono text-[11px] border border-dashed border-white/30 rounded px-3 py-1 text-muted hover:text-signal hover:border-signal-dim transition-colors">
+          <Link href="/tech-stack" className="text-[11px] border border-dashed border-white/30 rounded px-3 py-1 text-muted hover:text-signal hover:border-signal-dim transition-colors">
             {tHeaders("more")}
           </Link>
         </div>

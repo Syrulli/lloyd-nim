@@ -6,7 +6,7 @@ export default async function Footer() {
 
   return (
     <footer className="rounded bg-panel-2 border border-line grain px-6 py-4 flex flex-col sm:flex-row items-center justify-between gap-2">
-      <p className="font-mono text-[12px] text-paper">
+      <p className="text-[12px] text-paper">
         © {new Date().getFullYear()} Lloyd Nim — {t("rights")}
       </p>
 
@@ -17,6 +17,7 @@ export default async function Footer() {
           rel="noopener noreferrer"
           aria-label="GitHub"
           className="text-muted hover:text-signal transition-colors"
+          title="Github"
         >
           <GitHub className="h-5 w-5" />
         </a>
@@ -26,6 +27,7 @@ export default async function Footer() {
           rel="noopener noreferrer"
           aria-label="LinkedIn"
           className="text-muted hover:text-signal transition-colors"
+          title="LinkedIn"
         >
           <LinkedIn className="h-5 w-5" />
         </a>

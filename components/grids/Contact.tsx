@@ -16,7 +16,7 @@ export default async function Contact() {
                             <p className="mt-4 text-sm leading-relaxed text-paper max-w-md">
                                 {t("sub-description")}
                             </p>
-                            <a className="inline-flex w-fit items-center mt-5 gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur font-mono text-xs hover:text-signal hover:border-signal transition-colors">
+                            <a title="Schedule a call" className="inline-flex w-fit items-center mt-5 gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur text-xs hover:text-signal hover:border-signal transition-colors">
                                 <Phone className="h-3 w-3" />
                                 {t("schedule_call")}
                             </a>
@@ -53,8 +53,9 @@ export default async function Contact() {
                             {t("ld_subdescription")}
                         </p>
                         <a
+                            title="Send Email"
                             href="mailto:harrri.lazydevs@gmail.com"
-                            className="inline-flex w-fit items-center mt-5 gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur font-mono text-xs hover:text-signal hover:border-signal transition-colors"
+                            className="inline-flex w-fit items-center mt-5 gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur text-xs hover:text-signal hover:border-signal transition-colors"
                         >
                             <Mail className="h-3 w-3" />
                             {t("email")}

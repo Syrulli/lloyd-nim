@@ -84,12 +84,16 @@
         "sub-description": "Erzählen Sie mir von Ihrem Produkt oder Projekt, und ich werde die beste Lösung und die nächsten Schritte empfehlen. Die meisten Kooperationen beginnen mit einem kurzen Einführungsgespräch.",
         "schedule_call": "Termin vereinbaren",
         "email": "E-Mail senden",
-        "ld_subdescription": "Ein kleines team, das funktionale Web-Apps und Tools für den realen Einsatz erstellt."
+        "ld_subdescription": "Ein kleines team, das funktionale Web-Apps und tools für den realen einsatz erstellt."
+    },
+    "Tech-Stack": {
+        "title": "TECHNOLOGIE-STACK",
+        "subtitle": "Die Technologien und plattformen, mit denen ich arbeite, um nahtlose erlebnisse über das Frontend, Backend, Database, Mobile geräte und interaktive schnittstellen zu schaffen."
     },
     "NotFound": {
         "title": "404",
         "heading": "Seite nicht gefunden",
-        "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+        "description": "Die seite, die Sie suchen, existiert nicht.",
         "backHome": "Zurück zur Startseite"
     },
     "Footer": {

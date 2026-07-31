@@ -15,7 +15,7 @@ export default async function SectionHeader({
         <div className="flex items-center justify-between">
             <p className="text-[13px] tracking-widest text-signal-dim">{title}</p>
             {href && (
-                <Link href={href} className="text-[9px] tracking-widest text-paper py-1.5 hover:text-signal-dim transition-colors">
+                <Link href={href} className="text-[9px] tracking-widest text-paper py-1.5 hover:text-signal-dim transition-colors" title="View all">
                     {label} <ChevronRight className="inline-block h-3 w-3" />
                 </Link>
             )}

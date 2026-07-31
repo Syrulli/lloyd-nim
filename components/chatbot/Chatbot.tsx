@@ -62,6 +62,7 @@ export default function ChatBot() {
         <>
             {!isOpen && (
                 <button
+                    title="Chat with Lloyd"
                     onClick={() => setIsOpen(true)}
                     className="fixed bottom-6 right-6 flex items-center gap-2 px-4 py-2.5 bg-signal-dim text-white rounded-md shadow-xl hover:shadow-2xl hover:scale-105 transition-all duration-300 z-[9998] font-semibold text-sm tracking-tight"                >
                     <MessageCircle className="h-5 w-5" />
@@ -95,6 +96,7 @@ export default function ChatBot() {
                             </div>
                         </div>
                         <button
+                            title="Close"
                             onClick={() => setIsOpen(false)}
                             className="text-gray-400 hover:text-white transition"
                         >
@@ -168,6 +170,7 @@ export default function ChatBot() {
                                 autoFocus
                             />
                             <button
+                                title="Send"
                                 onClick={send}
                                 disabled={isSending || !input.trim()}
                                 className="w-10 h-10 bg-signal-dim rounded-full flex items-center justify-center text-white hover:scale-105 transition-transform shadow-md disabled:opacity-60"

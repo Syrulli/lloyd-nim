@@ -2,12 +2,11 @@ import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 import { ChevronRight } from "@/components/icons/IconPacks";
 
-
 export default async function NotFound() {
     const t = await getTranslations("NotFound");
 
     return (
-        <main className="min-h-screen bg-ink py-8 sm:py-14 px-4 flex items-center justify-center">
+        <section className="min-h-screen bg-ink py-8 sm:py-14 px-4 flex items-center justify-center">
             <div className="mx-auto max-w-md w-full rounded bg-panel-2 border border-line grain overflow-hidden">
                 <div className="flex items-center gap-2 px-5 py-3 border-b border-line">
                     <span className="h-2.5 w-2.5 rounded-full bg-[#e0555a]" />
@@ -23,13 +22,13 @@ export default async function NotFound() {
 
                     <Link
                         href="/"
-                        className="mt-6 inline-flex items-center gap-1.5 h-9 px-4 rounded border border-white/30 bg-panel-2/70 backdrop-blur font-mono text-xs hover:text-signal hover:border-signal transition-colors"
+                        className="mt-6 inline-flex items-center h-9 px-4 rounded border border-white/30 bg-panel-2/70 backdrop-blur font-mono text-xs hover:text-signal hover:border-signal transition-colors"
                     >
                         {t("backHome")}
-                        <ChevronRight className="h-3.5 w-3.5" />
+                        <ChevronRight className="h-4 w-4" />
                     </Link>
                 </div>
             </div>
-        </main>
+        </section>
     );
 }

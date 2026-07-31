@@ -1,80 +1,45 @@
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
-type StackCategory = {
-    key: string;
-    label: string;
-    items: string[];
-};
-
-const stack: StackCategory[] = [
-    {
-        key: "frontend",
-        label: "Frontend",
-        items: [
-            "TypeScript",
-            "JavaScript",
-            "React",
-            "Next.js",
-            "Tailwind CSS",
-            "next-intl",
-        ],
-    },
-    {
-        key: "mobile",
-        label: "Mobile",
-        items: ["Flutter", "Dart", "GetX"],
-    },
-    {
-        key: "backendData",
-        label: "Backend & Data",
-        items: ["Node.js", "MongoDB", "Mongoose", "NextAuth", "Cloudinary", "REST"],
-    },
-    {
-        key: "uiInteraction",
-        label: "UI & Interaction",
-        items: [
-            "Embla Carousel",
-            "Tiptap",
-            "Lowlight",
-            "OGL (WebGL)",
-            "lucide-react",
-            "Framer-style CSS transitions",
-        ],
-    },
-    {
-        key: "devTools",
-        label: "Dev Tools",
-        items: ["Git", "GitHub", "VS Code", "ESLint", "Prettier"],
-    },
-];
+import { StackItem } from "@/constant/interfaceConst";
+import { ChevronLeft } from "@deemlol/next-icons";
 
 export default function TechStackPage() {
-    const t = useTranslations("techStackPage");
+    const t = useTranslations("Tech-Stack");
 
     return (
-        <main className="mx-auto max-w-4xl px-6 py-16">
-            <div className="grain rounded bg-panel-2 border border-line p-8">
-                <h1 className="text-2xl font-semibold text-paper">
-                    {t("title", { defaultValue: "tech stack" })}
-                </h1>
+        <section className="mx-auto max-w-4xl px-6 py-16">
+            <div className="grain rounded bg-panel-2 border border-line p-10">
+                <div className="flex items-center justify-between">
+                    <h3 className="font-semibold text-paper">
+                        {t("title")}
+                    </h3>
+
+                    <Link
+                        href="/"
+                        title="Back"
+                        className="inline-flex items-center rounded border border-white/30 px-3 py-1 text-xs text-paper transition-colors hover:border-signal-dim hover:text-signal"
+                    >
+                        <ChevronLeft className="h-4 w-4 inline-block" />
+                        Back
+                    </Link>
+                </div>
+
                 <p className="mt-2 max-w-2xl text-sm text-muted">
-                    {t("subtitle", {
-                        defaultValue:
-                            "The tools, frameworks, and platforms I reach for — across the front end, mobile, back end, and interaction layer.",
-                    })}
+                    {t("subtitle")}
                 </p>
 
                 <div className="mt-10 flex flex-col gap-8">
-                    {stack.map((category) => (
+                    {StackItem.map((category) => (
                         <section key={category.key}>
-                            <h2 className="font-mono text-xs uppercase tracking-wide text-signal-dim">
+                            <h2 className=" text-xs uppercase tracking-wide text-signal-dim">
                                 {category.label}
                             </h2>
-                            <div className="mt-3 flex flex-wrap gap-3">
+                            <div className="mt-3 flex flex-wrap gap-2">
                                 {category.items.map((item) => (
                                     <span
                                         key={item}
-                                        className="font-mono text-[11px] border border-white/30 rounded px-3 py-1 hover:text-signal hover:border-signal-dim transition-colors"
+                                        className="text-[11px] border border-white/30 rounded px-3 py-1 hover:text-signal hover:border-signal-dim transition-colors"
                                     >
                                         {item}
                                     </span>
@@ -84,6 +49,6 @@ export default function TechStackPage() {
                     ))}
                 </div>
             </div>
-        </main>
+        </section>
     );
 }

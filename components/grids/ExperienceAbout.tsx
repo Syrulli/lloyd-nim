@@ -34,7 +34,7 @@ export default async function ExperienceAbout() {
               <span className="absolute left-0 top-1.5 h-[7px] w-[7px] rounded-full border border-white/50 bg-panel" />
               <p className="text-sm text-paper font-medium">{e.role}</p>
               <p className="text-xs text-muted">{e.org}</p>
-              <p className="font-mono text-[10px] text-signal-dim mt-0.5">{e.years}</p>
+              <p className="text-[10px] text-signal-dim mt-0.5">{e.years}</p>
             </li>
           ))}
         </ul>

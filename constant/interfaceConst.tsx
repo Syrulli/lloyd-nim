@@ -1,4 +1,4 @@
-import { CertItem } from "@/types/globalTypes";
+import { CertItem, StackCategory } from "@/types/globalTypes";
 
 export const LANGUAGES = [
   { code: "en", label: "English" },
@@ -78,4 +78,98 @@ export const ExperienceMeta = [
   { role: "Lead Back-End Developer", org: "APPCON Competition", years: "2023" },
   { role: "Front-End Developer", org: "MLQU University", years: "2022" },
   { role: "Collaborative Freelancing", org: "Lazy Developers", years: "2021" },
+];
+
+export const StackItem: StackCategory[] = [
+  {
+    key: "frontend",
+    label: "Frontend",
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "React",
+      "Vue.js",
+      "Next.js",
+      "Tailwind",
+      "Bootstrap",
+      "Shadcn",
+      "Material UI",
+      "AJAX",
+      "jQuery",
+      "Vite",
+      "SCSS",
+      "next-intl",
+    ],
+  },
+  {
+    key: "mobile",
+    label: "Mobile",
+    items: [
+      "Flutter",
+      "Dart",
+      "GetX",
+      "Redux",
+      "React Native",
+    ],
+  },
+  {
+    key: "backendData",
+    label: "Backend & Data",
+    items: [
+      "WAMP",
+      "MERN",
+      "RESTful",
+      "PHP",
+      "Laravel",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL",
+      "SQLite",
+      "OAuth",
+      "JWT",
+    ]
+  },
+  {
+    key: "ml/ai",
+    label: "Machine Learning / AI",
+    items: [
+      "Tensorflow.js",
+      "Teachable Machine",
+      "OpenAI",
+    ],
+  },
+  {
+    key: "testingApi",
+    label: "Testing & API",
+    items: [
+      "Jest",
+      "Postman",
+      "Swagger",
+    ],
+  },
+  {
+    key: "devTools",
+    label: "DevOps & Cloud",
+    items: [
+      "Vercel",
+      "Netlify",
+      "Hostinger",
+      "Jenkins",
+      "Github",
+      "Gitlab",
+      "Gitlab CI",
+      "Git",
+    ],
+  },
+  {
+    key: "security/identity",
+    label: "Security & Identity",
+    items: [
+      "Okta",
+      "Auth0",
+      "Cognito",
+      "Keycloak",
+    ],
+  },
 ];

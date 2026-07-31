@@ -17,3 +17,9 @@ export type Slide = {
     role: string;
     avatar?: string;
 };
+
+export type StackCategory = {
+    key: string;
+    label: string;
+    items: string[];
+}; 
