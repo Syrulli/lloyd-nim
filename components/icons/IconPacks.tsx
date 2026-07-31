@@ -10,6 +10,9 @@ import {
     Check,
     Phone,
     Code,
+    X,
+    MessageCircle,
+    Send,
 } from "@deemlol/next-icons"
 
 export {
@@ -24,4 +27,7 @@ export {
     Check,
     Phone,
     Code,
+    X,
+    MessageCircle,
+    Send,
 }

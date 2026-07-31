@@ -1,9 +1,10 @@
-import Hero from "@/components/Hero";
-import ExperienceAbout from "@/components/ExperienceAbout";
-import StackProjects from "@/components/StackProjects";
-import Testimonials from "@/components/TestimonialCarousel";
-import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
+import Hero from "@/components/grids/Hero";
+import ExperienceAbout from "@/components/grids/ExperienceAbout";
+import StackProjects from "@/components/grids/StackProjects";
+import Testimonials from "@/components/grids/TestimonialCarousel";
+import Footer from "@/components/grids/Footer";
+import Contact from "@/components/grids/Contact";
+import ChatBot from "@/components/chatbot/Chatbot";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <Testimonials />
         <Contact />
         <Footer />
+        <ChatBot />
       </div>
     </main>
   );

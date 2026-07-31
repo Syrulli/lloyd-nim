@@ -19,7 +19,7 @@ export default function GlassCards() {
             grain
           "
           >
-            <Image src={item.icon} alt={item.subtitle} width={50} height={50} className="rounded-lg mb-5" />
+            <Image src={item.icon} alt={item.subtitle} width={50} height={50} className="rounded-lg mb-5" loading="lazy" />
             <div className="flex flex-col items-center gap-3 text-center">
               <p className="whitespace-pre-line text-xs font-semibold leading-snug text-paper">
                 {item.title}

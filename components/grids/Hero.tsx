@@ -79,25 +79,26 @@ export default function Hero() {
           className="absolute inset-0 h-full w-full object-cover opacity-70"
         /> */}
         <PixelBlast
-          className="absolute inset-0 rounded-2xl"
+          className="absolute inset-0 rounded-2xl cursor-pointer"
           variant="square"
           pixelSize={3}
           color="#7CFE9D"
           patternDensity={0.9}
           patternScale={2}
-          edgeFade={0.25}
+          edgeFade={0.35}
           transparent
-          enableRipples={false}
+          enableRipples={true}
           liquid={false}          
+          
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink/40" />
+        {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink/40" /> */}
       </div>
 
       <div className="absolute left-6 sm:left-10 -mt-14 sm:-mt-19 z-20">
         <img
           src="/profile.webp"
           alt="Lloyd Nim"
-          loading="lazy"
+          loading="eager"
           className="h-20 w-20 sm:h-24 sm:w-24 rounded-full object-cover ring-4 ring-panel-2 shadow-lg"
         />
       </div>

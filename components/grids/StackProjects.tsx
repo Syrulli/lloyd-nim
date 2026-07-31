@@ -21,7 +21,7 @@ export default async function StackProjects() {
             alt="Project Image"
             fill
             className="object-cover object-top"
-            priority
+            loading="lazy"
           />
         </div>
       </div>

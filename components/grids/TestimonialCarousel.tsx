@@ -9,7 +9,7 @@ export default async function Testimonials() {
 
   return (
     <section className="rounded bg-panel-2 border border-line p-6 sm:p-8 grain">
-      <SectionHeader title={tHeaders("testimonials")} href="/testimonials" />
+      <SectionHeader title={tHeaders("testimonials")} />
       <p className="text-sm text-paper leading-relaxed my-2">
         {t("sub-description")}
       </p>

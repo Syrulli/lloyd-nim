@@ -43,6 +43,7 @@ export default async function Contact() {
                             alt="Let's work together"
                             fill
                             className="object-cover"
+                            loading="lazy"
                         />
                     </div>
 

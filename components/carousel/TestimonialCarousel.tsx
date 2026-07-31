@@ -80,6 +80,7 @@ export default function TestimonialCarousel({
                                                     fill
                                                     sizes="50px"
                                                     className="object-cover"
+                                                    loading="lazy"
                                                 />
                                             ) : (
                                                 <div className="flex h-full w-full items-center justify-center font-bold text-base sm:text-xl text-paper">
