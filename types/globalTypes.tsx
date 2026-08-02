@@ -9,6 +9,7 @@ export interface CertItem {
     icon: string;
     rotate: number;
     href?: string;
+    certificate?: string;
 }
 
 export type Slide = {
@@ -22,4 +23,12 @@ export type StackCategory = {
     key: string;
     label: string;
     items: string[];
-}; 
+};
+
+export interface GlassCardsProps {
+    items: CertItem[];
+    limit?: number;
+    variant?: "stack" | "grid";
+    rotated?: boolean;
+    showDownloadButton?: boolean;
+}

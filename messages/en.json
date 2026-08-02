@@ -77,7 +77,13 @@
   },
   "Tech-Stack": {
     "title": "TECHNOLOGY STACK",
-    "subtitle": "The technologies and platforms I work with to create seamless experiences across the front end, back end, databases, mobile, and interactive interfaces."
+    "subtitle": "The technologies and platforms I work with to create seamless experiences across the front end, back end, databases, mobile, and interactive interfaces.",
+    "back-button": "Back"
+  },
+  "Certificates": {
+    "title": "MY CERTIFICATES",
+    "subtitle": "A collection of certifications I've obtained to enhance my skills and knowledge.",
+    "back-button": "Back"
   },
   "NotFound": {
     "title": "404",

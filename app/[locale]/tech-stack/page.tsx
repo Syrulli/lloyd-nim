@@ -1,34 +1,24 @@
 import { useTranslations } from "next-intl";
-import Link from "next/link";
-
 import { StackItem } from "@/constant/interfaceConst";
-import { ChevronLeft } from "@deemlol/next-icons";
+import BackButton from "@/components/buttons/BackButton";
+
 
 export default function TechStackPage() {
     const t = useTranslations("Tech-Stack");
 
     return (
-        <section className="mx-auto max-w-4xl px-6 py-16">
+        <section>
             <div className="grain rounded bg-panel-2 border border-line p-10">
                 <div className="flex items-center justify-between">
                     <h3 className="font-semibold text-paper">
                         {t("title")}
                     </h3>
-
-                    <Link
+                    <BackButton
                         href="/"
-                        title="Back"
-                        className="inline-flex items-center rounded border border-white/30 px-3 py-1 text-xs text-paper transition-colors hover:border-signal-dim hover:text-signal"
-                    >
-                        <ChevronLeft className="h-4 w-4 inline-block" />
-                        Back
-                    </Link>
+                        label={t("back-button")}
+                    />
                 </div>
-
-                <p className="mt-2 max-w-2xl text-sm text-muted">
-                    {t("subtitle")}
-                </p>
-
+                <p className="mt-2 max-w-2xl text-sm text-muted">{t("subtitle")}</p>
                 <div className="mt-10 flex flex-col gap-8">
                     {StackItem.map((category) => (
                         <section key={category.key}>

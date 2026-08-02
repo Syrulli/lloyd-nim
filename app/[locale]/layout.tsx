@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
+import ChatBot from "@/components/chatbot/Chatbot";
+import Footer from "@/components/grids/Footer";
 
 const display = Space_Grotesk({
   subsets: ["latin"],
@@ -36,9 +38,15 @@ export default async function LocaleLayout({
   return (
     <html>
       <body className={`${display.variable} ${body.variable} ${mono.variable} font-body`}>
-        <NextIntlClientProvider messages={messages}>
-          {children}
-        </NextIntlClientProvider>
+        <main className="min-h-screen bg-ink py-8 sm:py-14 px-4">
+          <div className="mx-auto max-w-5xl flex flex-col gap-4">
+            <NextIntlClientProvider messages={messages}>
+              {children}
+              <ChatBot />
+              <Footer />
+            </NextIntlClientProvider>
+          </div>
+        </main>
       </body>
     </html>
   );

@@ -1,5 +1,5 @@
 import { getTranslations } from "next-intl/server";
-import { ExperienceMeta } from "@/constant/interfaceConst";
+import { CertItems, ExperienceMeta } from "@/constant/interfaceConst";
 import SectionHeader from "@/components/header/SectionHeader";
 import GlassCards from "@/components/cards/GlassCards";
 
@@ -50,7 +50,7 @@ export default async function ExperienceAbout() {
       </div>
       <div className="grain order-3 sm:row-span-2 rounded bg-panel-2 border border-line p-6 flex flex-col min-w-0">
         <SectionHeader title={tHeaders("certificates")} href="/certificates" />
-        <GlassCards />
+        <GlassCards items={CertItems} limit={3} rotated />
       </div>
     </div>
   );

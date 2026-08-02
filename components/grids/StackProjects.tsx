@@ -1,8 +1,8 @@
 import { getTranslations } from "next-intl/server";
-import Image from "next/image";
+import { Link } from "@/navigation";
 import { Techstack } from "@/constant/interfaceConst";
 import SectionHeader from "@/components/header/SectionHeader";
-import Link from "next/link";
+import Image from "next/image";
 
 export default async function StackProjects() {
   const t = await getTranslations("Projects");

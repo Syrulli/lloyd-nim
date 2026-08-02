@@ -1,7 +1,7 @@
 "use client";
 import { useState, useRef, useEffect } from "react";
-import { useRouter, usePathname } from "next/navigation";
 import { useTranslations, useLocale } from "next-intl";
+import { useRouter, usePathname } from "@/navigation";
 import PixelBlast from "@/components/background/PixelBlast";
 import { ChevronDown, Check, MapPin, Download, Mail } from "@/components/icons/IconPacks";
 import { LANGUAGES } from "@/constant/interfaceConst";
@@ -22,10 +22,14 @@ function LanguageDropdown() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  // function switchLocale(newLocale: string) {
+  //   const segments = pathname.split("/");
+  //   segments[1] = newLocale;
+  //   router.push(segments.join("/") || `/${newLocale}`);
+  //   setOpen(false);
+  // }
   function switchLocale(newLocale: string) {
-    const segments = pathname.split("/");
-    segments[1] = newLocale; 
-    router.push(segments.join("/") || `/${newLocale}`);
+    router.replace(pathname, { locale: newLocale }); // no manual segment splicing needed
     setOpen(false);
   }
 
@@ -59,7 +63,7 @@ function LanguageDropdown() {
 
 export default function Hero() {
   const t = useTranslations("Hero");
-  
+
   return (
     <section className="relative rounded overflow-hidden bg-panel-2 border border-line grain">
       <div className="flex items-center gap-2 px-5 py-3 border-b border-line">
@@ -88,8 +92,8 @@ export default function Hero() {
           edgeFade={0.35}
           transparent
           enableRipples={true}
-          liquid={false}          
-          
+          liquid={false}
+
         />
         {/* <div className="absolute inset-0 bg-gradient-to-b from-transparent to-ink/40" /> */}
       </div>

@@ -14,6 +14,7 @@ import {
     X,
     MessageCircle,
     Send,
+    Award ,
 } from "@deemlol/next-icons"
 
 export {
@@ -32,4 +33,5 @@ export {
     X,
     MessageCircle,
     Send,
+    Award,
 }
