@@ -85,6 +85,11 @@
     "subtitle": "A collection of certifications I've obtained to enhance my skills and knowledge.",
     "back-button": "Back"
   },
+  "ProjectsPage": {
+    "title": "MY PROJECTS",
+    "sub-description": "A collection of applications I've designed and developed.",
+    "back-button": "Back"
+  },
   "NotFound": {
     "title": "404",
     "heading": "Page not found",
