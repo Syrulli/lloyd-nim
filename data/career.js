@@ -1,9 +1,12 @@
 export const careerInfo = `
-Name: Lloyd Languido
+Name: Lloyd Nim
 Role: Full-Stack Developer (PHP, Next.js, React, MySQL)
 
 Full-Stack Developer Experience:
- Full-time Full Stack Developer at Fortune Pay Fintech, working with Vue.js, Flutter, Spring Boot, and Jenkins.
+ Full-time Full Stack Developer at Fortune Pay Fintech, working with Next.js, React, MongoDB, and Jenkins.
+ Integrated third-party and internal APIs for core fintech features at Fortune Pay.
+ Implemented Google ML Kit for KYC (identity verification) workflows at Fortune Pay.
+ Concurrently built and maintained an internal web application using Next.js while handling core Fortune Pay feature work.
  Managed and contributed to multiple projects, including a social service mobile application and fintech solutions.
  Freelance and collaborative developer under Lazy Developer; contributed to systems for:
   • Manuel L. Quezon University (MLQU)
@@ -23,6 +26,10 @@ Key Projects:
 Skills:
  Frontend: Next.js, React.js, Tailwind CSS, Bootstrap
  Backend: PHP, Node.js, MySQL, Laravel, SQLite
- AI / ML: TensorFlow.js, Teachable Machine, CNN Models, Image Classification
+ AI / ML: TensorFlow.js, Teachable Machine, CNN Models, Image Classification, Google ML Kit
+
+Interests:
+ Learning German (Deutsch), practicing listening comprehension through Rammstein's music.
+ History enthusiast, with particular interest in WWI, WWII, and Otto von Bismarck.
 
 `;

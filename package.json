@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@deemlol/next-icons": "^0.2.7",
-    "@google/genai": "^2.14.0",
+    "@google/generative-ai": "^0.24.1",
     "embla-carousel-autoplay": "^8.6.0",
     "embla-carousel-react": "^8.6.0",
     "gsap": "^3.15.0",

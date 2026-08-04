@@ -9,8 +9,6 @@ import { ChevronRight, ChevronLeft, X, } from '@/components/icons/IconPacks';
 import type { ProjectModalProps } from '@/types/globalTypes';
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose }) => {
-    const t = useTranslations("ProjectsPage");
-
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -137,7 +135,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                     >
                         <p className="pb-2 text-justify text-[0.8rem] text-foreground/80">{description}</p>
                         <h3 className="flex items-center gap-1 text-[13px] tracking-widest text-signal-dim">
-                            {t("features")}
+                            Features
                         </h3>
                         {features && features.length > 0 && (
                             <ul className="list-inside list-disc space-y-1 text-[0.8rem] text-foreground/80">

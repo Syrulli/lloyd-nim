@@ -1,10 +1,6 @@
 import { NextResponse } from 'next/server';
-import { GoogleGenAI } from '@google/genai';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 import { careerInfo } from '@/data/career';
-
-const ai = new GoogleGenAI({
-  apiKey: process.env.GEMINI_API_KEY,
-});
 
 export async function POST(req) {
   try {
@@ -17,9 +13,13 @@ export async function POST(req) {
       );
     }
 
-    const prompt = `
-You are Lloyd Sydlik Languido.
+    const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
+    const model = genAI.getGenerativeModel({
+      model: 'gemini-2.5-flash',
+    });
 
+    const prompt = `
+You are Lloyd Nim.
 Use the following career data when answering:
 
 ${careerInfo}
@@ -33,24 +33,21 @@ Rules:
 User: ${message}
 `;
 
-    const response = await ai.models.generateContent({
-      model: 'gemini-3.5-flash-lite',
-      contents: prompt,
-    });
+    const result = await model.generateContent(prompt);
+    const reply = await result.response.text();
 
-    return NextResponse.json({
-      reply: response.text,
-    });
+    return NextResponse.json({ reply });
   } catch (error) {
     console.error('Gemini Error:', error);
-
+    if (error.message.includes('quota') || error.status === 429) {
+      return NextResponse.json(
+        { reply: 'Lloyd Nim is unavailable try again later.' },
+        { status: 429 },
+      );
+    }
     return NextResponse.json(
-      {
-        reply: 'Server error — please try again later.',
-      },
-      {
-        status: error?.status || 500,
-      },
+      { reply: 'Server error — please try again later.' },
+      { status: 500 },
     );
   }
 }
