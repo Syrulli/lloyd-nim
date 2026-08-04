@@ -10,8 +10,7 @@ import { mockProjects } from '@/constant/interfaceConst';
 import type { Project } from '@/types/globalTypes';
 
 export default function ProjectsPage() {
-        const t = useTranslations("Projects");
-
+    const t = useTranslations("ProjectsPage");
     const [selectedProject, setSelectedProject] = useState<Project | null>(null);
 
     const handleProjectClick = (project: Project) => setSelectedProject(project);
@@ -19,7 +18,7 @@ export default function ProjectsPage() {
 
     return (
         <>
-            <div className="container mx-auto px-5 py-20 lg:px-0 lg:py-25 xl:px-25">
+            <div className="container mx-auto lg:px-0 lg:py-25 xl:px-25">
                 <div className="flex items-center justify-between">
                     <h3 className="font-semibold text-paper">{t("title")}</h3>
                     <BackButton
@@ -29,7 +28,7 @@ export default function ProjectsPage() {
                 </div>
 
                 <p className="mt-2 max-w-2xl text-sm text-muted">
-                    {t("subtitle")}
+                    {t("sub-description")}
                 </p>
                 <div className="mt-8 grid auto-rows-min grid-cols-2 gap-4 sm:grid-cols-2 lg:grid-cols-4">
                     {mockProjects.map((project, index) => (

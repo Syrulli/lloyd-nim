@@ -105,7 +105,6 @@ export default function TestimonialCarousel({
                                         </p>
                                     </div>
                                 </div>
-                                
                             </div>
                         );
                     })}

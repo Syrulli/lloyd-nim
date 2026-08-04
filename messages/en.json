@@ -88,7 +88,8 @@
   "ProjectsPage": {
     "title": "MY PROJECTS",
     "sub-description": "A collection of applications I've designed and developed.",
-    "back-button": "Back"
+    "back-button": "Back",
+    "features": "Features"
   },
   "NotFound": {
     "title": "404",

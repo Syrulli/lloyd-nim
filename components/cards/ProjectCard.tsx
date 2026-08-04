@@ -29,33 +29,36 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 src={cover}
                 alt={title}
                 loading="lazy"
-                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-cover scale-100 blur-0 brightness-[0.8] group-hover:scale-110 group-hover:blur-[2px] group-hover:brightness-[0.4]"
+                style={{
+                    transition: 'transform 2500ms ease-out, filter 2500ms ease-out',
+                }}
             />
 
             <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/10 to-transparent opacity-70 transition-opacity duration-300 group-hover:opacity-100" />
 
-            {/* Content */}
             <div className="absolute inset-x-0 bottom-0 translate-y-2 p-4 transition-transform duration-300 ease-out group-hover:translate-y-0">
-                <h3 className="text-sm font-semibold text-white lg:text-base">{title}</h3>
+                <div className="opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                    <h3 className="text-sm font-semibold text-white lg:text-base">{title}</h3>
 
-                <div className="mt-2 flex flex-wrap gap-1.5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                    {visibleTech.map((tech, index) => (
-                        <span
-                            key={index}
-                            className="rounded border border-white/20 bg-white/10 px-2 py-0.5 text-[0.65rem] text-white backdrop-blur-sm"
-                        >
-                            {tech}
-                        </span>
-                    ))}
-                    {remaining > 0 && (
-                        <span className="rounded border border-white/20 bg-white/10 px-2 py-0.5 text-[0.65rem] text-white backdrop-blur-sm">
-                            +{remaining}
-                        </span>
-                    )}
+                    <div className="mt-2 flex flex-wrap gap-1.5">
+                        {visibleTech.map((tech, index) => (
+                            <span
+                                key={index}
+                                className="rounded border border-white/20 bg-white/10 px-2 py-0.5 text-[0.65rem] text-white backdrop-blur-sm"
+                            >
+                                {tech}
+                            </span>
+                        ))}
+                        {remaining > 0 && (
+                            <span className="rounded border border-white/20 bg-white/10 px-2 py-0.5 text-[0.65rem] text-white backdrop-blur-sm">
+                                +{remaining}
+                            </span>
+                        )}
+                    </div>
                 </div>
             </div>
 
-            {/* Subtle ring on hover to sell "clickable" */}
             <div className="pointer-events-none absolute inset-0 rounded ring-1 ring-inset ring-white/0 transition-all duration-300 group-hover:ring-white/15" />
         </button>
     );

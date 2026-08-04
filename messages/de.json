@@ -88,7 +88,19 @@
     },
     "Tech-Stack": {
         "title": "TECHNOLOGIE-STACK",
-        "subtitle": "Die Technologien und plattformen, mit denen ich arbeite, um nahtlose erlebnisse über das Frontend, Backend, Database, Mobile geräte und interaktive schnittstellen zu schaffen."
+        "subtitle": "Die Technologien und plattformen, mit denen ich arbeite, um nahtlose erlebnisse über das Frontend, Backend, Database, Mobile geräte und interaktive schnittstellen zu schaffen.",
+        "back-button": "Zurück"
+    },
+    "Certificates": {
+        "title": "MEINE ZERTIFIKATE",
+        "subtitle": "Eine Sammlung von Zertifizierungen, die ich erworben habe, um meine Fähigkeiten und mein Wissen zu verbessern.",
+        "back-button": "Zurück"
+    },
+    "ProjectsPage": {
+        "title": "MEINE PROJEKTE",
+        "sub-description": "Eine Sammlung von Anwendungen, die ich entworfen und entwickelt habe.",
+        "back-button": "Zurück",
+        "features": "Funktionen"
     },
     "NotFound": {
         "title": "404",

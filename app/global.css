@@ -23,6 +23,16 @@ button:focus-visible {
     border-radius: 4px;
 }
 
+
+.hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
 
     *,
@@ -30,7 +40,8 @@ button:focus-visible {
     *::after {
         animation-duration: 0.001ms !important;
         animation-iteration-count: 1 !important;
-        transition-duration: 0.001ms !important;
+        /* transition-duration: 0.001ms !important; */
+        transition-duration: 200ms !important;
         scroll-behavior: auto !important;
     }
 }

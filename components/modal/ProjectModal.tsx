@@ -1,30 +1,16 @@
 'use client';
 
 import { useCallback, useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
+
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-// import { LayersIcon, SettingsSuggestOutlinedIcon } from '../icons/IconPack';
+import { ChevronRight, ChevronLeft, X, } from '@/components/icons/IconPacks';
 import type { ProjectModalProps } from '@/types/globalTypes';
 
-const CloseIcon = () => (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-    </svg>
-);
-
-const ChevronLeft = () => (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M15 18l-6-6 6-6" />
-    </svg>
-);
-
-const ChevronRight = () => (
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="h-5 w-5">
-        <path strokeLinecap="round" strokeLinejoin="round" d="M9 18l6-6-6-6" />
-    </svg>
-);
-
 const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose }) => {
+    const t = useTranslations("ProjectsPage");
+
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -48,7 +34,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
         emblaApi.on('reInit', onSelect);
     }, [emblaApi, onSelect]);
 
-    // Esc to close + lock body scroll while open
     useEffect(() => {
         if (!selectedProject) return;
 
@@ -73,14 +58,14 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
 
     return (
         <div
-            className="fixed inset-0 z-50 flex items-center justify-center bg-black/70 p-4 backdrop-blur-md"
+            className="fixed inset-0 z-50 flex items-start justify-center overflow-y-auto bg-black/70 p-4 pt-10 backdrop-blur-md lg:pt-10"
             onClick={onClose}
             role="dialog"
             aria-modal="true"
             aria-labelledby="project-modal-title"
         >
             <div
-                className="hide-scrollbar relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl border border-foreground/10 bg-background p-5 shadow-2xl lg:p-6"
+                className="hide-scrollbar relative max-h-[100vh] w-full max-w-4xl overflow-y-auto rounded border border-white/45 bg-[#1D1F1D] p-5 shadow-2xl lg:p-6"
                 onClick={(e) => e.stopPropagation()}
             >
                 <button
@@ -88,14 +73,12 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                     aria-label="Close"
                     className="absolute right-4 top-4 z-10 grid h-8 w-8 place-items-center rounded-full bg-foreground/10 text-foreground/70 transition hover:bg-foreground/20 hover:text-foreground"
                 >
-                    <CloseIcon />
+                    <X />
                 </button>
-
                 <h2 id="project-modal-title" className="pr-10 text-lg font-semibold lg:text-xl">
                     {title}
                 </h2>
 
-                {/* Carousel */}
                 <div className="relative mt-4 w-full">
                     <div className="overflow-hidden rounded-md" ref={emblaRef}>
                         <div className="flex">
@@ -129,13 +112,13 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                                 <ChevronRight />
                             </button>
 
-                            <div className="mt-3 flex items-center justify-center gap-1.5">
+                            <div className="absolute inset-x-0 bottom-2 flex items-center justify-center gap-1.5">
                                 {scrollSnaps.map((_, index) => (
                                     <button
                                         key={index}
                                         onClick={() => scrollTo(index)}
                                         aria-label={`Go to image ${index + 1}`}
-                                        className={`h-1.5 rounded-full transition-all ${index === selectedIndex ? 'w-4 bg-foreground' : 'w-1.5 bg-foreground/30'
+                                        className={`h-1.5 rounded-full transition-all ${index === selectedIndex ? 'w-4 bg-signal' : 'w-1.5 bg-signal-dim/30'
                                             }`}
                                     />
                                 ))}
@@ -144,7 +127,6 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                     )}
                 </div>
 
-                {/* Body */}
                 <div className="mt-4 space-y-4">
                     <div
                         onCopy={(e) => e.preventDefault()}
@@ -154,9 +136,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                         className="select-none"
                     >
                         <p className="pb-2 text-justify text-[0.8rem] text-foreground/80">{description}</p>
-
-                        <h3 className="flex items-center gap-1 text-sm font-semibold">
-                            Features
+                        <h3 className="flex items-center gap-1 text-[13px] tracking-widest text-signal-dim">
+                            {t("features")}
                         </h3>
                         {features && features.length > 0 && (
                             <ul className="list-inside list-disc space-y-1 text-[0.8rem] text-foreground/80">
@@ -168,7 +149,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
                     </div>
 
                     <div>
-                        <h3 className="flex items-center gap-1 text-sm font-semibold">
+                        <h3 className="flex items-center gap-1 text-[13px] tracking-widest text-signal-dim">
                             Tech Stack
                         </h3>
                         <div className="mt-2 flex flex-wrap gap-2">
