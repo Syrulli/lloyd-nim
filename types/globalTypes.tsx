@@ -39,13 +39,11 @@ export interface GlassCardsProps {
 export interface Project {
   id: number;
   title: string;
-  description: string;
-  features: string[];
-
   image: string | string[];
   techStack: string[];
   size: 'large' | 'medium' | 'small';
 }
+
 
 export interface ProjectCardProps {
   title: string;
@@ -56,14 +54,18 @@ export interface ProjectCardProps {
 }
 
 export interface ProjectModalProps {
-  selectedProject: {
-    id: number;
-    title: string;
-    description: string;
-    image: string | string[];
-    features: string[];
-    techStack: string[];
-    size: 'large' | 'medium' | 'small';
-  } | null;
+  // selectedProject: {
+  //   id: number;
+  //   title: string;
+  //   description: string;
+  //   image: string | string[];
+  //   features: string[];
+  //   techStack: string[];
+  //   size: 'large' | 'medium' | 'small';
+  // } | null;
+  // onClose: () => void;
+  selectedProject: Project | null;
   onClose: () => void;
 }
+
+

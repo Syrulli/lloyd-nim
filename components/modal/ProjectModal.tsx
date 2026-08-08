@@ -9,6 +9,8 @@ import { ChevronRight, ChevronLeft, X, } from '@/components/icons/IconPacks';
 import type { ProjectModalProps } from '@/types/globalTypes';
 
 const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose }) => {
+    const t = useTranslations("ProjectsPage");
+
     const [selectedIndex, setSelectedIndex] = useState(0);
     const [scrollSnaps, setScrollSnaps] = useState<number[]>([]);
     const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
@@ -49,9 +51,16 @@ const ProjectModal: React.FC<ProjectModalProps> = ({ selectedProject, onClose })
         };
     }, [selectedProject, onClose]);
 
-    if (!selectedProject) return null;
+    // if (!selectedProject) return null;
 
-    const { image, title, description, techStack, features } = selectedProject;
+    // const { image, title, description, techStack, features } = selectedProject;
+    // const images = Array.isArray(image) ? image : [image];
+
+    if (!selectedProject) return null;
+    const { id, image, title, techStack } = selectedProject;
+
+    const description = t(`${id}.description`);
+    const features = t.raw(`${id}.features`) as string[];
     const images = Array.isArray(image) ? image : [image];
 
     return (

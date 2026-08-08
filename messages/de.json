@@ -100,7 +100,91 @@
         "title": "MEINE PROJEKTE",
         "sub-description": "Eine Sammlung von Anwendungen, die ich entworfen und entwickelt habe.",
         "back-button": "Zurück",
-        "features": "Funktionen"
+        "1": {
+            "title": "Zahnarztterminplanungssystem",
+            "description": "Diese Webanwendung optimiert die Planung von Zahnarztterminen und integriert gleichzeitig eine KI-gestützte Diagnosefunktion. Mithilfe eines mit Teachable Machine trainierten Convolutional Neural Network (CNN) erkennt die KI Zahnbilder und identifiziert häufige Erkrankungen wie Karies, Gingivitis und Fehlstellungen. Patienten erhalten sofortige bildbasierte zahnmedizinische Erkenntnisse, Handlungsempfehlungen und passende Servicevorschläge – für eine bessere Zugänglichkeit und frühzeitige Erkennung von Mundgesundheitsproblemen.",
+            "features": [
+                "KI-gestützte Zahnarzttermine: Ein All-in-One-System zur Terminbuchung und Erkennung von Zahnproblemen durch eine CNN-basierte Bildanalyse, die mit Teachable Machine trainiert wurde.",
+                "KI-Zahnempfehlungen: Das mit Teachable Machine trainierte KI-Modell erkennt Zahnprobleme anhand von Bildern und stellt automatisch geeignete Serviceempfehlungen sowie einen vorgeschlagenen Termin mit Datum und Uhrzeit bereit.",
+                "CNN-basierte Schweregradklassifizierung: Das CNN-Modell erkennt nicht nur, ob eine Zahnerkrankung vorliegt, sondern klassifiziert auch deren Schweregrad (z. B. leicht, mittel, schwer) bei Karies, Verfärbungen oder Fehlstellungen und unterstützt dadurch eine individuellere Behandlungsplanung.",
+                "Dynamische Optimierung der Zeitfenster: Das System passt verfügbare Termine automatisch an die Arbeitsbelastung des Zahnarztes, Echtzeit-Stornierungen und die von der KI vorhergesagte Termindauer entsprechend der Komplexität der erkannten Erkrankungen an.",
+                "Konfidenzbasierte Klassifizierung: Um Fehlalarme zu minimieren, klassifiziert das System eine Erkrankung nur, wenn die Vorhersagekonfidenz einen festgelegten Schwellenwert (z. B. 85 %) überschreitet. Bei geringer Konfidenz kann der Fall als „Unsicher“ gekennzeichnet und eine professionelle Überprüfung angefordert werden.",
+                "Zahncharting und Behandlungsplanung: Zahnärzte können digitale Zahndiagramme erstellen und verwalten, Erkrankungen dokumentieren und Behandlungen für jeden Patienten planen.",
+                "Ausgabenverfolgung (Chart.js): Visualisiert die Kosten zahnmedizinischer Leistungen über einen bestimmten Zeitraum mit Chart.js für eine bessere finanzielle Überwachung und Transparenz.",
+                "Intelligente Benachrichtigungen per SIM und E-Mail: Das System bietet automatisierte SMS- (SIM-basiert) und E-Mail-Benachrichtigungen. Patienten erhalten Echtzeit-Updates wie Terminbestätigungen, Erinnerungen und Benachrichtigungen über Terminänderungen. Dadurch werden Nichterscheinen reduziert, die Effizienz der Praxis verbessert und eine professionellere und zuverlässigere Patientenerfahrung ermöglicht."
+            ]
+        },
+        "2": {
+            "title": "RTU IPCRs",
+            "description": "Das Individual Performance Commitment and Review (IPCR)-System ist eine sichere und dynamische Plattform zur Optimierung von Leistungsbewertungsprozessen innerhalb einer Organisation. Es automatisiert die Erstellung von IPCR-Datensätzen, versendet Echtzeit-E-Mail-Benachrichtigungen bei Aktualisierungen und ermöglicht eine Live-Verfolgung der Leistung für mehr Transparenz. Durch dedizierte Zugriffsebenen für HR-Mitarbeiter, Abteilungsleiter, Mitarbeiter und den Super Admin gewährleistet das System eine effiziente Verwaltung, Verantwortlichkeit und Datenintegrität für alle Benutzer.",
+            "features": [
+                "Verwendet den App Router mit API Routes und Server Actions zur Verwaltung von Authentifizierung, Geschäftslogik und Datenbankoperationen innerhalb einer einzigen Anwendung.",
+                "Speichert Mitarbeiterprofile, IPCR-Datensätze, Bewertungen und historische Leistungsdaten in einer zentralisierten NoSQL-Datenbank.",
+                "Bietet dedizierte Dashboards und Berechtigungen für HR, Abteilungsleiter, Mitarbeiter und den Super Admin, um sichere Arbeitsabläufe zu gewährleisten.",
+                "Verwendet Chart.js zur Darstellung von Echtzeitdiagrammen, Zusammenfassungen und Leistungstrends für Mitarbeiter und Abteilungen.",
+                "Integriert Nodemailer zum Versenden von E-Mail-Benachrichtigungen, sobald IPCR-Datensätze eingereicht, überprüft, genehmigt oder aktualisiert werden.",
+                "Verwendet SheetJS zum Erstellen, Importieren und Exportieren von IPCR-Datensätzen im Excel-Format für Berichte und Dokumentation.",
+                "Implementiert sichere Anmeldung, geschützte Seiten und serverseitige Autorisierung zum Schutz vertraulicher Mitarbeiterinformationen.",
+                "Führt Benutzer durch jede Bewertungsphase mit Statusverfolgung und kontrolliertem Fortschritt von der Selbsteinschätzung bis zur endgültigen Genehmigung.",
+                "Erfasst Benutzeraktionen, Zeitstempel und Änderungen an Datensätzen zur Verbesserung von Verantwortlichkeit, Transparenz und Compliance.",
+                "Optimiert für schnelle Leistung, responsives Design und eine nahtlose Bereitstellung im Next.js- und Vercel-Ökosystem."
+            ]
+        },
+        "3": {
+            "title": "Subnetz-IPv4-Rechner",
+            "description": "Subnetz-IPv4-Rechner: Geben Sie eine IP-Adresse sowie die gewünschte Anzahl von Hosts oder Subnetzen ein und erhalten Sie detaillierte Ergebnisse einschließlich Oktetten, Binärformat, Netzwerkklasse, Subnetzmaske, CIDR, ausgeliehenen Bits, Subnetz-Inkrement, Netzwerk-ID, nutzbarem Hostbereich, Broadcast-Adresse und vielem mehr – alles, was Sie für eine präzise Subnetzberechnung benötigen.",
+            "features": [
+                "Akzeptiert IPv4-Eingaben, die erforderliche Anzahl von Hosts und die erforderliche Anzahl von Subnetzen.",
+                "Berechnet und zeigt die korrekten Oktette an und stellt die Binärdarstellung der IP-Adresse dar.",
+                "Identifiziert die Netzwerkklasse (A, B und C) und zeigt das neue binäre Subnetzformat an.",
+                "Berechnet die maximale Anzahl von Hosts pro Subnetz und die maximale Anzahl von Netzwerken.",
+                "Berechnet die nutzbaren Hosts pro Subnetz und zeigt den Subnetz-Inkrementwert an."
+            ]
+        },
+        "4": {
+            "title": "Beautyshine",
+            "description": "Beautéshine Cosmetics ist eine moderne webbasierte Anwendung, die Sie mit nur wenigen Klicks Ihren Beauty-Zielen näherbringt. Egal, ob Sie hochwertige Hautpflege, Make-up-Produkte oder exklusive Beauty-Bundles kaufen möchten – BeautéShine bietet eine nahtlose und benutzerfreundliche Erfahrung, die an Ihren Lebensstil angepasst ist. Mit integrierten Funktionen wie Stripe Checkout, Echtzeit-Produktaktualisierungen und personalisierten Empfehlungen macht unsere Plattform den Beauty-Einkauf intelligenter, schneller und angenehmer. Entdecken, einkaufen und strahlen – alles an einem Ort.",
+            "features": [
+                "Nahtlose Stripe-Integration: Benutzer können Beauty-Produkte sicher über Stripe kaufen und profitieren von einem schnellen und unkomplizierten Checkout-Erlebnis.",
+                "Wunschlisten- und Favoritenfunktion: Kunden können ihre Lieblingsprodukte in einer persönlichen Wunschliste für zukünftige Käufe oder Geschenkideen speichern.",
+                "Werbebanner und Rabattcodes: Hebt laufende Verkäufe oder zeitlich begrenzte Angebote mit auffälligen Bannern hervor und unterstützt vom Benutzer eingegebene Rabattcodes beim Checkout.",
+                "Treueprogramm: Registrierte Kunden sammeln bei jedem Kauf Punkte, die gegen Rabatte oder exklusive Produkte eingelöst werden können.",
+                "Blog- oder Beauty-Tipps-Bereich: Bietet Artikel zu Hautpflegeroutinen, Make-up-Tutorials, Produktempfehlungen und saisonalen Beauty-Trends, um Benutzer zu informieren und zu engagieren.",
+                "Produktvergleichstool: Ermöglicht Benutzern, mehrere Produkte auszuwählen und deren Inhaltsstoffe, Größen, Preise und Bewertungen direkt miteinander zu vergleichen."
+            ]
+        },
+        "5": {
+            "title": "Gusstenberg",
+            "description": "Das Gusstenberg-System ist eine desktopbasierte Anwendung, die mit Java entwickelt wurde, um die Lohn- und Gehaltsabrechnung innerhalb einer Organisation zu optimieren und zu automatisieren. Es gewährleistet eine präzise Gehaltsberechnung durch die Integration von Mitarbeiterdaten, Anwesenheitsdaten, Steuerregeln und staatlichen Beiträgen. Mit der integrierten PDF-Gehaltsabrechnung vereinfacht das System die Dokumentation und Verteilung von Gehaltsabrechnungen.",
+            "features": [
+                "Rollenbasierte Zugriffskontrolle: Administratoren, HR-Mitarbeiter und Manager verfügen über festgelegte Zugriffsebenen, um Gehaltsdaten sicher einzusehen oder zu ändern.",
+                "Gehaltsberechnung: Berechnet Bruttogehalt, Abzüge, Leistungen, Steuern und Nettogehalt präzise auf Grundlage von Mitarbeiterdaten und Anwesenheit.",
+                "PDF-Gehaltsabrechnung und Export: Erstellt sofort detaillierte Gehaltsabrechnungen im PDF-Format für jeden Mitarbeiter, die zum Drucken oder zur digitalen Verteilung bereitstehen.",
+                "Anpassbare Gehaltsstrukturen: Unterstützt verschiedene Gehaltsarten (stündlich, täglich, monatlich) und ermöglicht eine flexible Konfiguration von Leistungen und Abzügen.",
+                "Gehaltsabrechnung für mehrere Mitarbeiter mit einem Klick: Verarbeitet die Gehaltsabrechnung für alle Mitarbeiter einer Abteilung oder des gesamten Unternehmens mit einer einzigen Aktion."
+            ]
+        },
+        "6": {
+            "title": "QCA Foundation",
+            "description": "Diese für die QCA Foundation entwickelte Webanwendung dient dazu, das Ausleihen von Schulwerkzeugen und -ausrüstung zu optimieren und bietet zusätzlich eine Funktion zur Klassenplanung für ein effizientes Ressourcen- und Zeitmanagement. Das System soll die allgemeine Organisation und Zugänglichkeit akademischer Materialien verbessern und Schülern sowie Lehrern ermöglichen, Werkzeuge nahtlos über eine digitale Plattform auszuleihen. Durch die Integration einer benutzerfreundlichen Oberfläche und einer Echtzeit-Planung stellt die Anwendung sicher, dass Werkzeuge bei Bedarf verfügbar sind und Klassenpläne gut organisiert und konfliktfrei bleiben. Ob bei der Reservierung von Laborausrüstung oder der Verwaltung von Klassenräumen – dieses System unterstützt die Mission der Foundation, Bildungserfahrungen durch effektive digitale Lösungen zu verbessern.",
+            "features": [
+                "Intelligentes Ausleihsystem mit Echtzeitverfügbarkeit: Schüler und Lehrer können die Verfügbarkeit von Werkzeugen in Echtzeit einsehen und deren Ausleihe anfordern. Das System verhindert Doppelbuchungen durch sofortige Aktualisierung des Inventars.",
+                "Automatisierter Klassenplaner mit Konflikterkennung: Lehrkräfte können Klassenpläne erstellen und verwalten. Das System erkennt automatisch Konflikte bei Klassenräumen, Werkzeugen oder Lehrkräften und schlägt Alternativen vor.",
+                "Ausleihhistorie und Nutzungsanalyse: Administratoren können Ausleihprotokolle mit Daten, Dauer und Nutzungsstatistiken der Artikel einsehen, um häufig verwendete Werkzeuge zu verfolgen.",
+                "RBAC: Verschiedene Benutzerrollen (Administrator, Lehrer, Mitarbeiter) verfügen über angepasste Dashboards und Berechtigungen, wodurch Sicherheit und Übersichtlichkeit gewährleistet werden.",
+                "Automatisierte Benachrichtigungen und Erinnerungen: Das System versendet E-Mail-Erinnerungen für bevorstehende Rückgabefristen, überfällige Artikel oder bevorstehende Klassen, bei denen ausgeliehene Werkzeuge benötigt werden."
+            ]
+        },
+        "7": {
+            "title": "Kōhī",
+            "description": "Kōhī ist ein webbasiertes Kaffee-Bestellsystem, das darauf ausgelegt ist, das Kundenerlebnis zu optimieren und die Effizienz des Café-Betriebs zu steigern. Über eine benutzerfreundliche Oberfläche können Kunden bequem das Menü durchsuchen, ihre Bestellungen individuell anpassen und online aufgeben. Das System integriert Echtzeit-Auftragsverwaltung, sicheren Checkout und responsives Design und ist dadurch auf verschiedenen Geräten zugänglich. Kōhī modernisiert traditionelle Café-Dienstleistungen durch digitale Lösungen, die auf den schnelllebigen, technologieorientierten Lebensstil von heute zugeschnitten sind.",
+            "features": [
+                "Echtzeit-Bestellstatus-Tracker: Nach Aufgabe einer Bestellung können Benutzer deren Fortschritt in Echtzeit verfolgen (z. B. „In Bearbeitung“, „Abholbereit“, „Unterwegs zur Lieferung“).",
+                "Dynamische Menüverwaltung (Admin-Panel): Administratoren können Menüeinträge, Preise, Verfügbarkeit und Bilder einfach über ein sicheres Backend aktualisieren – ohne Programmierkenntnisse.",
+                "Bestellhistorie: Administratoren können eine umfassende Historie aller Kundenbestellungen einsehen, einschließlich Bestellartikeln, Zahlungsmethode (z. B. PayPal), Status, Zeitstempeln und Kundeninformationen.",
+                "Kundenfeedback und Bewertungen: Nach jeder Transaktion können Benutzer ihr Getränk bewerten und Feedback hinterlassen, wodurch Kōhī die Produktqualität und den Service verbessern kann."
+            ]
+        }
     },
     "NotFound": {
         "title": "404",
