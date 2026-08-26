@@ -32,7 +32,7 @@ export default function GlassCards({
           }
           className={`
           grain
-          relative flex ${variant === "stack" ? "h-[180px]" : "min-h-[120px]"} w-[200px]
+          relative flex ${variant === "stack" ? "h-[140px] sm:h-[180px]" : "min-h-[100px] sm:min-h-[120px]"} w-[150px] sm:w-[200px]
           flex-col items-center justify-between
           rounded border border-line bg-panel
           px-6 py-7
@@ -54,7 +54,8 @@ export default function GlassCards({
                 alt={item.subtitle}
                 width={50}
                 height={50}
-                className="mb-5 rounded-lg"
+                className="mb-3 rounded-lg sm:mb-5"
+
                 loading="lazy"
               />
             ) : (
@@ -64,7 +65,7 @@ export default function GlassCards({
             )}
           </a>
 
-          <div className="flex flex-col items-center gap-3 text-center">
+          {/* <div className="flex flex-col items-center gap-3 text-center">
             <p className="whitespace-pre-line text-xs font-semibold leading-snug text-paper">
               {item.title}
             </p>
@@ -84,6 +85,32 @@ export default function GlassCards({
                   </a>
                 ) : (
                   <span className="text-[11px] text-muted">
+                    Certificate unavailable
+                  </span>
+                ))}
+            </div>
+          </div> */}
+          <div className="flex flex-col items-center gap-2 text-center sm:gap-3">
+            <p className="whitespace-pre-line text-[10px] font-semibold leading-tight text-paper sm:text-xs sm:leading-snug">
+              {item.title}
+            </p>
+
+            <p className="hidden text-[10px] tracking-widest text-muted sm:block">
+              {item.subtitle}
+            </p>
+
+            <div className="mt-1 h-[22px] sm:mt-2 sm:h-[26px]">
+              {showDownloadButton &&
+                (item.certificate ? (
+                  <a
+                    href={item.certificate}
+                    download
+                    className="inline-flex rounded border border-white/30 px-2 py-1 text-[9px] font-medium text-paper transition-colors hover:border-signal hover:text-signal sm:px-3 sm:text-[11px]"
+                  >
+                    Download Certificate
+                  </a>
+                ) : (
+                  <span className="text-[9px] text-muted sm:text-[11px]">
                     Certificate unavailable
                   </span>
                 ))}
