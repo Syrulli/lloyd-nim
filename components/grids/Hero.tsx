@@ -119,7 +119,9 @@ export default function Hero() {
           </div>
 
           <div className="flex items-center gap-2 md:mt-1 shrink-0">
-            <a href="/resume.pdf" title="Download CV" download className="flex items-center gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur text-xs hover:text-signal hover:border-signal transition-colors">
+            <a
+              href="/cv/Lloyd-Nim-CV.pdf"
+              title="Download CV" download className="flex items-center gap-1.5 h-8 px-3 rounded border border-white/30 bg-panel-2/40 backdrop-blur text-xs hover:text-signal hover:border-signal transition-colors">
               <Download className="h-3.5 w-3.5" />
               {t("download")}
             </a>
