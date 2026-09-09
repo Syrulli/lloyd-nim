@@ -365,7 +365,7 @@ export const mockProjects: Project[] = [
     //   "RBAC: Different user roles (Admin, Teacher, Staff) have customized dashboards and permissions, ensuring security and clarity in operations.",
     //   "Automated Notifications and Reminders: The system sends email reminders for upcoming return deadlines, overdue items, or upcoming scheduled classes involving borrowed tools."
     // ],
-    image: ["/projects/QCA/img-1.webp", "/projects/QCA/img-2.webp", "/projects/QCA/img-3.webp", "/projects/QCA/img-4.webp", "/projects/QCA/img-5.webp", "/projects/QCA/img-6.webp", "/projects/QCA/img-7.webp", "/projects/QCA/img-8.webp",],
+    image: ["/projects/qca/img-1.webp", "/projects/qca/img-2.webp", "/projects/qca/img-3.webp", "/projects/qca/img-4.webp", "/projects/qca/img-5.webp", "/projects/qca/img-6.webp", "/projects/qca/img-7.webp", "/projects/qca/img-8.webp",],
 
     techStack: ["PHP", "MySQL", "FullCalendar.js", "AJAX", "jQuery", "Bootstrap", "PHPMailer", "Hostinger"],
     size: "small"

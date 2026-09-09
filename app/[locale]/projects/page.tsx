@@ -45,7 +45,6 @@ export default function ProjectsPage() {
                     ))}
                 </div>
             </div>
-
             <ProjectModal selectedProject={selectedProject} onClose={handleCloseModal} />
         </>
     );
