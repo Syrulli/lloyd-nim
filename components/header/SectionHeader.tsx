@@ -1,4 +1,5 @@
-import Link from "next/link";
+// import Link from "next/link";
+import { Link, useRouter } from "@/navigation";
 import { getTranslations } from "next-intl/server";
 import { SectionHeaderProps } from "@/types/globalTypes";
 import { ChevronRight } from "@/components/icons/IconPacks";

@@ -1,5 +1,6 @@
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link, useRouter } from "@/navigation";
 import { ChevronRight } from "@/components/icons/IconPacks";
 
 export default async function NotFound() {

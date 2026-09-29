@@ -1,11 +1,17 @@
 import { useTranslations } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+
 import BackButton from "@/components/buttons/BackButton";
 import GlassCards from "@/components/cards/GlassCards";
 import { CertItems } from "@/constant/interfaceConst";
 
-export default function CertificatePage() {
-    const t = useTranslations("Certificates");
+// export default function CertificatePage() {
+//     const t = useTranslations("Certificates");
 
+export default function CertificatePage({ params }: { params: { locale: string } }) {
+    setRequestLocale(params.locale);
+    const t = useTranslations("Certificates");
+    
     return (
         <section>
             <div className="grain rounded border border-line bg-panel-2 p-6 sm:p-10">
